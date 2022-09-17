@@ -8,24 +8,26 @@
     "net6.0": []
   },
   "packageFolders": {
-    "/root/.nuget/packages/": {}
+    "C:\\Users\\peter\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/ubuntu/document/c_sharp/practice_1_1/practice_1_1.csproj",
+      "projectUniqueName": "c:\\Users\\peter\\Documents\\成大\\視窗程式設計\\practice_1_1\\practice_1_1.csproj",
       "projectName": "practice_1_1",
-      "projectPath": "/home/ubuntu/document/c_sharp/practice_1_1/practice_1_1.csproj",
-      "packagesPath": "/root/.nuget/packages/",
-      "outputPath": "/home/ubuntu/document/c_sharp/practice_1_1/obj/",
+      "projectPath": "c:\\Users\\peter\\Documents\\成大\\視窗程式設計\\practice_1_1\\practice_1_1.csproj",
+      "packagesPath": "C:\\Users\\peter\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\peter\\Documents\\成大\\視窗程式設計\\practice_1_1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/root/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\peter\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -49,8 +51,7 @@
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -59,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/root/dotnet/sdk/6.0.401/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
