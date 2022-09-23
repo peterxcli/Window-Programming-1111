@@ -62,7 +62,7 @@ while (true) {
     else if (opt == 4) {
         int ret = 0;
         foreach(var x in dict) {
-            ret += x.Value.Item3 - x.Value.Item2;
+            ret += x.Value.Item3 - x.Value.Item2 + 1;
         }
         Console.WriteLine(ret);
         Console.WriteLine();
