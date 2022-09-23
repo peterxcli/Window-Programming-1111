@@ -22,7 +22,7 @@ while (true) {
             continue;
         }
         bool flag = false;
-        for (int i = start_section; i <= end_section; i++) for (int j = 1; j <= 7; j++) if (curriculum[i, j] != "") flag = true;
+        for (int i = start_section; i <= end_section; i++) if (curriculum[i, week] != "") flag = true;
         if (flag) {
             Console.WriteLine("course conflict!!");
             Console.WriteLine();
