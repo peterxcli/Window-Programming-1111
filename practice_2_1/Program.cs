@@ -1,4 +1,5 @@
-﻿Dictionary<string, Tuple<int, int, int> > dict = new Dictionary<string, Tuple<int, int, int> >();
+//eric cf rating 4200
+Dictionary<string, Tuple<int, int, int> > dict = new Dictionary<string, Tuple<int, int, int> >();
 string[,] curriculum = new string[15, 15]; //curriculum[section, week]
 
 for (int i = 1; i <= 8; i++) for (int j = 1; j <= 7; j++) curriculum[i, j] = "";
