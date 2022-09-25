@@ -29,8 +29,8 @@ char getAgainstPlayer() {
 }
 
 void minusAgainstAndAddCurrentPlayer() {
-    if (flag) {player_X--; player_O++;}
-    else {player_O--; player_X++;}
+    if (flag) {player_X++; player_O--;}
+    else {player_O++; player_X--;}
 }
 
 void process_right(int i, int j) {
@@ -119,6 +119,9 @@ while (player_O + player_X < 64) {
     grid[row, col] = (flag ? 'X' : 'O');
     if(flag)player_X++; else player_O++;
     process_right(row, col);
+    process_down(row, col);
+    process_left(row, col);
+    process_up(row, col);
     Console.Clear();
     flag = !flag;
 }
