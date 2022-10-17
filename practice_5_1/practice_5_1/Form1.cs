@@ -32,14 +32,9 @@ namespace practice_5_1
             {
                 btnKeys[i] = new Button();
                 int idx = i;
-                btnKeys[i].Click += (s, e) => OnBtnKeysClick(idx);
                 btnKeys[i].KeyPress += (s, e) => OnKeyPress(s, e);
                 this.Controls.Add(btnKeys[i]);
             }
-        }
-        void OnBtnKeysClick(int idx)
-        {
-            
         }
         void renderMenu()
         {
@@ -71,10 +66,12 @@ namespace practice_5_1
         void renderPlayground()
         {
             for (int i = 0; i < 26; i++) btnKeys[i].Visible = true;
+            for (int i = 0; i < 26; i++) btnKeys[i].Enabled = true;
             for (int i = 0; i < 26; i++) btnKeys[i].BackColor = Color.White;
             displayErrorTime.Visible = true;
             displayTime.Visible = true;
             displayAnswer.Visible = true;
+            displayAnswer.Font = new Font("Arial", 12, FontStyle.Bold);
 
             label1.Visible = false;
             label2.Visible = false;
@@ -163,7 +160,7 @@ namespace practice_5_1
             {
                 if (dict.ContainsKey(word[i].ToString())) displayAnswer.Text += word[i];
                 else displayAnswer.Text += "_";
-                displayAnswer.Text += (i == word.Length - 1 ? "" : " ");
+                displayAnswer.Text += (i == word.Length - 1 ? "" : "  ");
             }
             displayErrorTime.Text = "猜錯次數: " + errorCounter.ToString();
             if (isLose())
